@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  max-width: 9.25rem;
+  width: 9.25rem;
 `;
 
 export const CardItem = styled.div`
@@ -42,21 +42,20 @@ export const CardItem = styled.div`
   & span {
     width: 100%;
     height: 1px;
-    background-color: hsl(235, 16%, 14%);
+    background-color: rgba(31, 29, 42, 30%);
     position: absolute;
     z-index: 10;
   }
 `;
 
 export const Value = styled.h2`
-  font-weight: 700;
   font-size: 5rem;
+  letter-spacing: 0;
   color: hsl(345, 95%, 68%);
   z-index: 5;
 `;
 
 export const Field = styled.p`
-  text-transform: uppercase;
   color: hsl(237, 18%, 59%);
   text-align: center;
   margin-top: 1.88rem;

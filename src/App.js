@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "./components/Cards/Card";
+import CardsContainer from "./components/Cards/CardsContainer";
 import Global from "./styles/Global";
-import { Container, Title } from './styles/styles';
+import { Container, Title } from "./styles/style";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Global />
       <Container>
         <Title>We&apos;re lauching soon</Title>
-        <Card field="days" value={23}/>
+        <CardsContainer />
       </Container>
     </>
   );

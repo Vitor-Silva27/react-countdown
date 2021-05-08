@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { CardItem, Field, Value, CardContainer } from "./styles";
+import { CardItem, Field, Value, CardContainer } from "./style";
 
 const Card = ({ field, value }) => {
   return (
