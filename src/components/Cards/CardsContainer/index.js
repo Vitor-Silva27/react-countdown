@@ -8,7 +8,9 @@ const CardsContainer = () => {
   const [minutes, setMinutes] = useState(55);
   const [seconds, setSeconds] = useState(41);
 
-  React.useEffect(() =>{
+  const addZero = (value) => (value < 10 ? "0" + value : value);
+
+  React.useEffect(() => {
     const interval = setInterval(() => {
       setSeconds(seconds - 1);
     }, 1000);
@@ -18,24 +20,24 @@ const CardsContainer = () => {
     }
     if (minutes <= 0 && hours > 0) {
       setHours(hours - 1);
-      setMinutes(60);
+      setMinutes(59);
     }
     if (hours <= 0 && days > 0) {
       setDays(days - 1);
+      setHours(23);
     }
     if (days <= 0) {
       return;
     }
     return () => clearInterval(interval);
-  },[seconds])
-
+  }, [seconds]);
 
   return (
     <Cards>
-      <Card field="days" value={days} />
-      <Card field="hours" value={hours} />
-      <Card field="minutes" value={minutes} />
-      <Card field="seconds" value={seconds} />
+      <Card field="days" value={addZero(days)} />
+      <Card field="hours" value={addZero(hours)} />
+      <Card field="minutes" value={addZero(minutes)} />
+      <Card field="seconds" value={addZero(seconds)} />
     </Cards>
   );
 };
