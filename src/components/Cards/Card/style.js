@@ -15,13 +15,6 @@ export const CardItem = styled.div`
   position: relative;
   box-shadow: 0px 10px 0 0 rgba(26, 26, 34, 100%);
 
-  & div {
-    width: 100%;
-    height: 50%;
-    background-color: #2c2c44;
-    position: absolute;
-    top: 0;
-  }
   &::before,
   &::after {
     content: "";
@@ -48,6 +41,26 @@ export const CardItem = styled.div`
   }
 `;
 
+
+export const Shadow = styled.div`
+  width: 100%;
+  height: 50%;
+  top: 0;
+  transform-origin: center bottom;
+  position: absolute;
+  background: #2c2c44;
+  border-radius: 0 0 7px 7px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  & p{
+    font-size: 5rem;
+    position: absolute;
+    letter-spacing: 0;
+    color: hsl(345, 95%, 68%);
+    top: 16px;
+  }
+`;
 export const Value = styled.h2`
   font-size: 5rem;
   letter-spacing: 0;

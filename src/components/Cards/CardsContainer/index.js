@@ -10,10 +10,11 @@ const CardsContainer = () => {
 
   const addZero = (value) => (value < 10 ? "0" + value : value);
 
-  React.useEffect(() => {
-    const interval = setInterval(() => {
+  React.useEffect(function countdown(){
+    const countInterval = setInterval(() => {
       setSeconds(seconds - 1);
     }, 1000);
+    
     if (seconds <= 0 && minutes > 0) {
       setMinutes(minutes - 1);
       setSeconds(60);
@@ -29,8 +30,9 @@ const CardsContainer = () => {
     if (days <= 0) {
       return;
     }
-    return () => clearInterval(interval);
+    return () => clearInterval(countInterval);
   }, [seconds]);
+
 
   return (
     <Cards>
