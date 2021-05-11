@@ -89,6 +89,8 @@ export const Value = styled.h2`
 
 export const Field = styled.p`
   color: var(--Grayish-blue);
+  font-size: 0.875rem;
+  letter-spacing: 0.37rem;
   text-align: center;
   margin-top: 1.88rem;
   line-height: 1;

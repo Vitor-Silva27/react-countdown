@@ -5,11 +5,10 @@ export const Cards = styled.div`
   padding: 0 0.3125rem;
   display: flex;
   justify-content: space-between;
-  margin: 6.25rem 0 0 0;
+  margin: 6.55rem 0 0 0;
 
-  @media(max-width: 768px){
+  @media (max-width: 768px) {
     width: 20.44rem;
     padding: 0;
   }
 `;
-

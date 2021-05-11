@@ -15,10 +15,10 @@ export const Title = styled.h1`
   font-size: 1.38rem;
   color: #fff;
   text-align: center;
-  margin-top: 8.75rem;
-  letter-spacing: 0.475rem;
+  margin-top: 8.69rem;
+  letter-spacing: 0.5rem;
   line-height: 1;
-  
+
   @media (max-width: 768px) {
     font-size: 1.13rem;
     width: 19rem;
