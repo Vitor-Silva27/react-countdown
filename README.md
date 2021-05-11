@@ -13,8 +13,7 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Social medias](#Social-Medias)
 
 
 ## Overview
