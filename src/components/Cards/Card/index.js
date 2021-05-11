@@ -8,8 +8,8 @@ const Card = ({ field, value }) => {
   const [animation, setAnimation] = React.useState("");
 
   React.useEffect(() => {
-    
     setAnimation("anim");
+
     setTimeout(() => {
       setAnimation("");
     }, 950);
@@ -21,9 +21,11 @@ const Card = ({ field, value }) => {
         <Shadow className={animation}>
           <p>{value}</p>
         </Shadow>
+
         <Value>{value}</Value>
         <span></span>
       </CardItem>
+
       <Field>{field}</Field>
     </CardContainer>
   );

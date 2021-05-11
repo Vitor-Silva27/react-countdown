@@ -1,7 +1,7 @@
 import React from "react";
 import CardsContainer from "./components/Cards/CardsContainer";
 import Global from "./styles/Global";
-import { Container, Title, SocialMedias, Atr } from "./styles/style";
+import { Container, Title, SocialMedias } from "./styles/style";
 
 function App() {
   return (
@@ -30,13 +30,6 @@ function App() {
             />
           </svg>
         </SocialMedias>
-        <Atr>
-          Challenge by Frontend Mentor.
-          <p>
-            Coded by <span>Vitor Silva</span>
-          </p>
-          .
-        </Atr>
       </Container>
     </>
   );
