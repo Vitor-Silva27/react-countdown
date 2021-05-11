@@ -12,7 +12,7 @@ const CardsContainer = () => {
 
   React.useEffect(function countdown(){
     const countInterval = setInterval(() => {
-      if(!(days == 0 && hours == 0 && minutes == 0 && seconds == 0)){
+      if(!(days === 0 && hours === 0 && minutes === 0 && seconds === 0)){
         setSeconds(seconds - 1);
       }
     }, 1000);
