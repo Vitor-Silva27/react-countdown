@@ -2,11 +2,14 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
   width: 9.25rem;
+  @media (max-width: 768px) {
+    width: 4.38rem;
+  }
 `;
 
 export const CardItem = styled.div`
   height: 8.75rem;
-  background-color: hsl(236, 21%, 26%);
+  background-color: var(--Dark-desaturated-blue);
   border-radius: 7px;
   display: flex;
   justify-content: center;
@@ -19,10 +22,10 @@ export const CardItem = styled.div`
   &::after {
     content: "";
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: hsl(234, 17%, 12%);
-    border-radius: 50px;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: var(--Very-dark-blue);
+    border-radius: 50%;
     position: absolute;
     z-index: 10;
   }
@@ -34,13 +37,17 @@ export const CardItem = styled.div`
   }
   & span {
     width: 100%;
-    height: 1px;
+    height: 0.0625rem;
     background-color: rgba(31, 29, 42, 30%);
     position: absolute;
     z-index: 10;
   }
-`;
 
+  @media (max-width: 768px) {
+    width: 4.375rem;
+    height: 4.1875rem;
+  }
+`;
 
 export const Shadow = styled.div`
   width: 100%;
@@ -53,23 +60,41 @@ export const Shadow = styled.div`
   overflow: hidden;
   display: flex;
   justify-content: center;
-  & p{
+
+  & p {
     font-size: 5rem;
     position: absolute;
     letter-spacing: 0;
-    color: hsl(345, 95%, 68%);
-    top: 16px;
+    color: var(--Soft-red);
+    top: 1rem;
+  }
+  @media (max-width: 768px) {
+    & p {
+      font-size: 2.38rem;
+      top: 0.5rem;
+    }
   }
 `;
+
 export const Value = styled.h2`
   font-size: 5rem;
   letter-spacing: 0;
-  color: hsl(345, 95%, 68%);
+  color: var(--Soft-red);
   z-index: 5;
+
+  @media (max-width: 768px) {
+    font-size: 2.38rem;
+  }
 `;
 
 export const Field = styled.p`
-  color: hsl(237, 18%, 59%);
+  color: var(--Grayish-blue);
   text-align: center;
   margin-top: 1.88rem;
+  line-height: 1;
+  @media (max-width: 768px) {
+    width: 4.375rem;
+    font-size: 0.44rem;
+    margin-top: 0.88rem;
+  }
 `;
