@@ -3,10 +3,10 @@ import Card from "../Card";
 import { Cards } from "./style";
 
 const CardsContainer = () => {
-  const [days, setDays] = useState(0);
-  const [hours, setHours] = useState(1);
-  const [minutes, setMinutes] = useState(1);
-  const [seconds, setSeconds] = useState(10);
+  const [days, setDays] = useState(8);
+  const [hours, setHours] = useState(23);
+  const [minutes, setMinutes] = useState(55);
+  const [seconds, setSeconds] = useState(41);
 
   const addZero = (value) => (value < 10 ? "0" + value : value);
 
