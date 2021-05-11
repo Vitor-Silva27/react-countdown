@@ -17,12 +17,14 @@ export const Title = styled.h1`
   text-align: center;
   margin-top: 8.75rem;
   letter-spacing: 0.475rem;
+  line-height: 1;
   
   @media (max-width: 768px) {
     font-size: 1.13rem;
     width: 19rem;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.4;
   }
 `;
 
