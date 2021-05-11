@@ -12,11 +12,12 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 1.5rem;
+  font-size: 1.38rem;
   color: #fff;
   text-align: center;
   margin-top: 8.75rem;
-
+  letter-spacing: 0.475rem;
+  
   @media (max-width: 768px) {
     font-size: 1.13rem;
     width: 19rem;
@@ -31,7 +32,7 @@ export const SocialMedias = styled.footer`
   width: 8.5rem;
   display: flex;
   justify-content: space-between;
-  bottom: 4.5rem;
+  bottom: 9%;
 
   & svg:hover {
     cursor: pointer;
