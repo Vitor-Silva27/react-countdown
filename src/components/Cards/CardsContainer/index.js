@@ -30,7 +30,7 @@ const CardsContainer = () => {
       setHours(23);
     }
     return () => clearInterval(countInterval);
-  }, [seconds]);
+  }, [days, hours, minutes, seconds]);
 
 
   return (
